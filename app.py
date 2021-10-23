@@ -1,8 +1,9 @@
 from flask import Flask
 app = Flask(__name__)
 print(__name__)
-@app.route('/')
-def home():
-    return('hello from flask server', 200)
-from controllers import teas
-app.register_blueprint(teas.router, url_prefix='/api')
+
+from controllers import dialogues
+from controllers import users
+app.register_blueprint(dialogues.router, url_prefix='/api')
+app.register_blueprint(users.router, url_prefix='/api')
+
