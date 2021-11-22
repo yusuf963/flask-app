@@ -7,8 +7,8 @@ users_db = [
     },
     {
         'id': 1,
-        'name': 'John',
-        'age': 26,
+        'name': 'Ali',
+        'age': 46,
         'gender': 'male'
     }
 ]
